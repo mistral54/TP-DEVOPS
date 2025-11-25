@@ -22,6 +22,12 @@ def game():
         if guess == secret:
             print("Bravo !")
             break
+        
+        elif guess == "cheats":
+            print(f"le mot de passe était {secret}")
+            input("appuyer sur entre pour quitter")
+            return()
+        
     print(f"Lettres communes : {common_letters(guess, secret)}")
     print(f"Nombre d'essais : {attempts}")
 
